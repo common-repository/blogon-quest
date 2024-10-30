@@ -1,0 +1,7 @@
+.blogon-quest_page_blogon-quest-character-list {
+	.character-list {
+		h1 {
+			@include blogonQuestTitleFont( $font-size: 2em, $stroke-width: 1px );
+		}
+	}
+}

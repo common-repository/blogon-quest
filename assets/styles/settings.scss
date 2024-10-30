@@ -1,0 +1,33 @@
+$blogon-title-color: #1E90FF;
+$strength-color: #ff4500;
+$defense-color: #00bfff;
+$agility-color: #34e208;
+
+@mixin blogonQuestTitleFont( $font-size: 64px, $stroke-width: 2.5px ) {
+  color: $blogon-title-color;
+  -webkit-text-stroke: $stroke-width #000000;
+  font-weight: bold;
+  font-size: $font-size;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+@mixin bqItemHeading( $color: #ffffff, $stroke-width: 2px, $stroke-color: #9932cc, $font-size: 36px ) {
+  color: $color;
+  font-weight: bold;
+  -webkit-text-stroke: $stroke-width $stroke-color;
+  font-size: $font-size;
+}
+
+@font-face {
+  font-family: 'PixelMplus';
+  src: url('../../fonts/PixelMplus10-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PixelMplus';
+  src: url('../../fonts/PixelMplus10-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}

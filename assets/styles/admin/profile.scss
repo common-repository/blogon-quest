@@ -1,0 +1,53 @@
+.blogon-quest-zone {
+	.profile-block {
+		.bq-window {
+			.window-title {
+				@include bqItemHeading();
+				letter-spacing: 8px;
+			}
+			li {
+				display: flex;
+				justify-content: space-between;
+			}
+		}
+	}
+
+	.status-desc-window {
+		text-align: left;
+		p {
+			font-size: 18px;
+			&:not(:last-of-type) {
+				padding-bottom: 16px;
+			}
+		}
+	}
+}
+
+.blogon-pc {
+	.blogon-quest-zone {
+		.profile-block {
+			.bq-window {
+				width: 50%;
+				margin-left: 5px;
+				margin-right: 5px;
+			}
+		}
+	}
+}
+
+.blogon-sp {
+	.blogon-quest-zone {
+		.profile-block {
+			.bq-window {
+				li {
+					flex-direction: column;
+					align-items: center;
+					h4 {
+						font-weight: normal;
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+}

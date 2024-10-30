@@ -1,0 +1,70 @@
+#blogon-quest-widget {
+	background: #222;
+	color: #fff;
+	.inside {
+		margin-top: 0;
+		padding-top: 11px;
+	}
+	.postbox-header {
+		h2 {
+			@include blogonQuestTitleFont( $font-size: 18px, $stroke-width: 0.5px );
+  		padding: 5px 12px;
+		}
+	}
+	span {
+		&.order-higher-indicator {
+			color: #fff;
+		}
+		&.order-lower-indicator {
+			color: #fff;
+		}
+		&.toggle-indicator {
+			color: #fff;
+		}
+	}
+
+	p {
+		letter-spacing: 2px;
+		margin: 0;
+		padding: 5px 0;
+		font-size: 14px;
+
+		.plus {
+			color: #ff0080;
+		}
+		.minus {
+			color: #0000ff;
+		}
+
+		&.sign-in-days {
+			font-weight: bold;
+			span{
+				color: #ff0080;
+			}
+		}
+
+		&.profile-link {
+			letter-spacing: 0;
+			width: 100%;
+			font-size: 13px;
+			text-align: right;
+			a {
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+
+		span {
+			font-size: 14px;
+		}
+	}
+
+	ul {
+		margin: 0;
+	}
+
+	li {
+		display: flex;
+		margin: 0;
+	}
+}
